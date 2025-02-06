@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.0.5](https://github.com/skyrpex/nanoid62/compare/v1.0.4...v1.0.5) (2025-02-06)
+
+
+### Bug Fixes
+
+* mergify config ([9818f56](https://github.com/skyrpex/nanoid62/commit/9818f56458812cf6c536da6e9c8eaf32666010b6))
+* release workflow ([c291ac3](https://github.com/skyrpex/nanoid62/commit/c291ac39350fa32f37bfe818d93c62294d3c560a))
+
 ## [1.0.4](https://github.com/skyrpex/nanoid62/compare/v1.0.3...v1.0.4) (2025-02-06)
 
 
