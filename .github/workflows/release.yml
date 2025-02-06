@@ -27,7 +27,6 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
-          registry-url: https://npm.pkg.github.com/
         if: ${{ steps.release.outputs.release_created }}
       - name: Setup pnpm
         uses: pnpm/action-setup@v4
@@ -36,7 +35,7 @@ jobs:
         run: pnpm install
         if: ${{ steps.release.outputs.release_created }}
       - name: Publish
-        run: npm publish
         env:
-          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: npx -p publib@latest publib-npm
         if: ${{ steps.release.outputs.release_created }}
