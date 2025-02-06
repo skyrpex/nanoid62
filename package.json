@@ -1,6 +1,6 @@
 {
 	"name": "nanoid62",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "A small, fast, and URL-friendly unique ID generator.",
 	"author": {
 		"name": "Cristian Pallarés",
@@ -10,7 +10,9 @@
 	"type": "module",
 	"exports": "./src/nanoid62.ts",
 	"types": "./src/nanoid62.ts",
-	"files": ["src"],
+	"files": [
+		"src"
+	],
 	"dependencies": {
 		"nanoid": "^5.0.9"
 	},
