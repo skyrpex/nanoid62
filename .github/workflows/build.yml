@@ -25,11 +25,11 @@ jobs:
       - name: Setup pnpm
         uses: pnpm/action-setup@v4
       - name: Install dependencies
-        run: pnpm i --no-frozen-lockfile
+        run: npm install
       - name: Lint and format
-        run: pnpm biome check --write
+        run: npx biome check --write
       - name: Test
-        run: pnpm vitest
+        run: npx vitest
       - name: Find mutations
         id: self_mutation
         run: |-

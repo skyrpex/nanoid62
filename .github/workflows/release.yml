@@ -27,11 +27,8 @@ jobs:
           node-version: 20
           registry-url: "https://registry.npmjs.org"
         if: ${{ steps.release.outputs.release_created }}
-      - name: Setup pnpm
-        uses: pnpm/action-setup@v4
-        if: ${{ steps.release.outputs.release_created }}
       - name: Install dependencies
-        run: pnpm install
+        run: npm ci
         if: ${{ steps.release.outputs.release_created }}
       - name: Publish
         env:
