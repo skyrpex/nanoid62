@@ -37,7 +37,7 @@ jobs:
         uses: pnpm/action-setup@v4
         if: ${{ steps.release.outputs.release_created }}
       - name: Install dependencies
-        run: pnpm ci
+        run: pnpm install
         if: ${{ steps.release.outputs.release_created }}
       - name: Publish
         run: pnpm publish
