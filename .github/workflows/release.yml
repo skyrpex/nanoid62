@@ -36,6 +36,6 @@ jobs:
         if: ${{ steps.release.outputs.release_created }}
       - name: Publish
         env:
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-        run: npx -p publib@latest publib-npm
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: npm publish
         if: ${{ steps.release.outputs.release_created }}
