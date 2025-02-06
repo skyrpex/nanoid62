@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.2](https://github.com/skyrpex/nanoid62/compare/v1.0.1...v1.0.2) (2025-02-06)
+
+
+### Bug Fixes
+
+* publish config ([3ad7d92](https://github.com/skyrpex/nanoid62/commit/3ad7d928825862837cf1e1a332f74584940b2143))
+
 ## [1.0.1](https://github.com/skyrpex/nanoid62/compare/v1.0.0...v1.0.1) (2025-02-06)
 
 
