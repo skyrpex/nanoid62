@@ -19,23 +19,28 @@ jobs:
         with:
           app_id: ${{ secrets.APP_ID }}
           private_key: ${{ secrets.APP_PRIVATE_KEY }}
-      - uses: googleapis/release-please-action@v4
+      - name: Check release
+        uses: googleapis/release-please-action@v4
         id: release
         with:
           release-type: node
           token: ${{ steps.generate_token.outputs.token }}
-      - uses: actions/checkout@v4
+      - name: Checkout
+        uses: actions/checkout@v4
         if: ${{ steps.release.outputs.release_created }}
-      - uses: actions/setup-node@v4
+      - name: Setup node
+        uses: actions/setup-node@v4
         with:
           node-version: 20
         if: ${{ steps.release.outputs.release_created }}
       - name: Setup pnpm
         uses: pnpm/action-setup@v4
         if: ${{ steps.release.outputs.release_created }}
-      - run: pnpm ci
+      - name: Install dependencies
+        run: pnpm ci
         if: ${{ steps.release.outputs.release_created }}
-      - run: pnpm publish
+      - name: Publish
+        run: pnpm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
         if: ${{ steps.release.outputs.release_created }}
