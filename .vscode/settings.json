@@ -6,7 +6,7 @@
 	},
 	"editor.codeActionsOnSave": {
 		"quickfix.biome": "explicit",
-		"source.organizeImports": "explicit",
+		"source.organizeImports": "explicit"
 	},
 	"js/ts.implicitProjectConfig.target": "ESNext",
 	"javascript.preferences.importModuleSpecifierEnding": "js",
@@ -16,5 +16,5 @@
 	"typescript.preferences.importModuleSpecifier": "project-relative",
 	"typescript.tsdk": "node_modules/typescript/lib",
 	"typescript.updateImportsOnPaste.enabled": false,
-	"typescript.format.enable": false,
+	"typescript.format.enable": false
 }
