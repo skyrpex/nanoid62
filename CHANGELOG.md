@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.4](https://github.com/skyrpex/nanoid62/compare/v1.0.3...v1.0.4) (2025-02-06)
+
+
+### Bug Fixes
+
+* release workflow ([28246da](https://github.com/skyrpex/nanoid62/commit/28246da1a403a9aef5763e33faad764d9085a7ef))
+
 ## [1.0.3](https://github.com/skyrpex/nanoid62/compare/v1.0.2...v1.0.3) (2025-02-06)
 
 
