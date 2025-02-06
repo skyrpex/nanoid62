@@ -1,10 +1,7 @@
 pull_request_rules:
-  - name: Automatic merge for release PRs
+  - name: Automatic merge release PRs
     conditions:
       - "label=autorelease: pending"
-      - base=main
-      - -draft
-      - -conflict
     actions:
       merge:
         method: squash
