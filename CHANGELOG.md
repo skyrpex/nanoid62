@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.8](https://github.com/skyrpex/nanoid62/compare/v1.0.7...v1.0.8) (2025-02-06)
+
+
+### Bug Fixes
+
+* remove pnpm from github workflows ([00c391a](https://github.com/skyrpex/nanoid62/commit/00c391a10cad7e2621984c4b677feb09c5cff710))
+
 ## [1.0.7](https://github.com/skyrpex/nanoid62/compare/v1.0.6...v1.0.7) (2025-02-06)
 
 
