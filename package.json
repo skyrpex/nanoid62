@@ -14,7 +14,7 @@
 		"nanoid": "^5.0.9"
 	},
 	"devDependencies": {
-		"@biomejs/biome": "2.4.3",
+		"@biomejs/biome": "2.4.4",
 		"vitest": "^4.0.1"
 	},
 	"engines": {
