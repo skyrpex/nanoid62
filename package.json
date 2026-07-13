@@ -11,7 +11,7 @@
 	"exports": "./src/nanoid62.ts",
 	"types": "./src/nanoid62.ts",
 	"dependencies": {
-		"nanoid": "^5.0.9"
+		"nanoid": "^6.0.0"
 	},
 	"devDependencies": {
 		"@biomejs/biome": "2.5.3",
